@@ -1,0 +1,323 @@
+.container-new {
+	@media (min-width: 1350px) {
+		max-width: 1306px;
+    	width: 1306px;
+	}
+}
+
+body {
+	@include media-breakpoint-down(lg) {
+		overflow-x: hidden!important;
+	}
+	&.fixed {
+		position: fixed!important;
+	}
+}
+.show-lg {
+	@include media-breakpoint-down(sm) {
+		display: none!important;
+	}
+}
+
+.show-sm {
+	@include media-breakpoint-up(sm) {
+		display: none!important;
+	}
+}
+
+
+// City page
+#city__single {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	@include media-breakpoint-down(md) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.city__content {
+		p {
+			font-size: 1.125em;
+			line-height: 1.44;
+			margin-bottom: 40px;
+			color:#808080;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 30px;
+			}
+			strong {
+				color:$black;
+			}
+		}
+		h2 {
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: 45px;
+			line-height: 1.46;
+			font-family: $pop-bold;
+			color:#2A2627;
+			@include media-breakpoint-down(sm) {
+				font-size: 1.75em;
+				margin-bottom: 35px;
+			}
+		}
+		ul {
+			margin-bottom: 50px;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 40px;
+			}
+			li {
+				margin-bottom: 30px;
+				font-size: 1.125em;
+				line-height: 1.44;		
+				color:#808080;
+				position: relative;
+				padding-left: 53px;
+				@include media-breakpoint-down(sm) {
+					padding-left: 42px;
+				}
+				&:before {
+					content:'';
+					width: 20px;
+					height: 20px;
+					display: block;
+					position: absolute;
+					left:0px;
+					top:3px;
+					background: $blue;
+					@include media-breakpoint-down(sm) {
+						width: 16px;
+						height: 16px;
+					}
+				}
+				strong {
+					color:$black;
+				}
+			}
+		}
+	}
+}
+
+.pagination-block {
+	margin-bottom: 50px;
+	span {
+		font-size: 1.15em;
+		border:none;
+		&.current {
+			color:$blue
+		}
+	}
+	a {
+		border:none;
+		font-size: 1.15em;
+		color:$black;
+		&:hover {
+			color:$orange;
+		}
+	}
+}
+
+// Regular page
+#regular__content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	@include media-breakpoint-down(md) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.content {
+		p {
+			font-size: 1.125em;
+			line-height: 1.44;
+			margin-bottom: 40px;
+			color:#808080;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 30px;
+			}
+			strong {
+				color:$black;
+			}
+		}
+		h2 {
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: 45px;
+			line-height: 1.46;
+			font-family: $pop-bold;
+			color:#2A2627;
+			@include media-breakpoint-down(sm) {
+				font-size: 1.75em;
+				margin-bottom: 35px;
+			}
+		}
+		ul {
+			margin-bottom: 50px;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 40px;
+			}
+			li {
+				margin-bottom: 30px;
+				font-size: 1.125em;
+				line-height: 1.44;		
+				color:#808080;
+				position: relative;
+				padding-left: 53px;
+				@include media-breakpoint-down(sm) {
+					padding-left: 42px;
+				}
+				&:before {
+					content:'';
+					width: 20px;
+					height: 20px;
+					display: block;
+					position: absolute;
+					left:0px;
+					top:3px;
+					background: $blue;
+					@include media-breakpoint-down(sm) {
+						width: 16px;
+						height: 16px;
+					}
+				}
+				strong {
+					color:$black;
+				}
+			}
+		}
+	}
+  }
+
+  .ermac__space {
+	  padding-top: 150px;
+  }
+
+  // FAQ Page
+  #faq__listing {
+	  padding-top: 75px;
+	  padding-bottom: 75px;
+	  @include media-breakpoint-down(lg) {
+		  padding-top: 50px;
+		  padding-bottom: 50px;
+	  }
+	  .faq__section {
+		  margin-bottom: 35px;
+		  padding-left: 50px;
+		  padding-right: 50px;  
+		  @include media-breakpoint-down(lg) {
+			  margin-bottom: 30px;
+			  padding-left: 0px;
+			  padding-right: 0px;
+		  }
+		  h2 {
+			  color: #2A2627;
+			  font-size: 42px;
+			  line-height: 55px;
+			  font-family: $pop-light;
+			  margin-bottom: 25px;
+			  padding-left: 30px;
+			  @include media-breakpoint-down(lg) {
+				  font-size: 32px;
+				  line-height: 42px;
+				  margin-bottom: 20px;
+				  padding-left: 10px;
+			  }
+		  }
+		  h3 {
+			color: #2A2627;
+			font-size: 22px;
+			line-height: 1.4;
+			font-family: $pop-bold;
+			background:  #E5E5E5;
+			border-top-left-radius: 15px;
+			border-bottom-left-radius: 15px;
+			padding-left: 30px;
+			padding-top: 40px;
+			padding-bottom: 36px;
+			@include animate-fade;
+			margin-bottom: 0px;
+			margin-top: 7px;
+			position: relative;
+			@include media-breakpoint-down(lg) {
+				padding-left: 15px;
+				padding-top: 20px;
+				padding-bottom: 18px;
+				font-size: 16px;
+				padding-right: 130px;
+			}
+			&:after {
+				@include centre(y);
+				right:-160px;
+				content:'ANSWER';
+				width: 170px;
+				border-radius: 15px;
+				text-align: center;
+				background: #00ABF8;
+				text-transform: uppercase;
+				color:$white;
+				font-size: 18px;
+				font-family: $pop-bold;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				@include media-breakpoint-down(lg) {
+					width: 100px;
+					right:0px;
+					font-size: 15px;
+				}
+			}
+			&:focus {
+				outline: 0;
+			}
+			&:hover {
+				color:$orange;
+				cursor:pointer;
+			}
+			&.ui-accordion-header-active {
+				&:after {
+					background: #FFAF32;
+					content:'CLOSE';
+				}
+			}
+		  }
+		  div.answer {
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			padding-top: 40px;
+			background: #f5f5f5;
+			border-bottom-right-radius: 15px;
+			border-bottom-left-radius: 15px;
+			@include media-breakpoint-down(sm) {
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 15px;
+				padding-top: 20px;
+			}		
+			p {
+				font-size: 15px;
+				line-height: 23px;
+				color: #808080;
+				margin-bottom: 20px;
+			}	
+			ul {
+				margin-left: 40px;
+				@include media-breakpoint-down(lg) {
+					margin-left: 20px;
+				}
+				li {
+					font-size: 15px;
+					line-height: 23px;
+					color: #808080;
+					display: block;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					a {
+						color:$blue;
+						&:hover {
+							color:$orange;
+						}
+					}					
+				}
+			}
+		  }
+	  }
+  }

@@ -1,0 +1,993 @@
+/*===============================
+=            Landing            =
+===============================*/
+#lp-header {
+	height: 111px;
+	display: flex;
+	align-items: center;
+	background-color: $blue;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 110px;
+	padding-right: 110px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	@media (min-width: 1200px) and (max-width:1550px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@include breakpoint (desktop) {
+		height: 80px;
+	}
+	@include media-breakpoint-only(lg) {
+		height: 80px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	@include media-breakpoint-only(md) {
+		height: 60px;
+	}
+	@include media-breakpoint-down(md) {
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 60px;
+	}
+	.lp-topbar {
+		text-align: center;
+		max-width:1800px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 100%;
+		@media (min-width: 1200px) and (max-width:1550px) {
+			max-width: 1306px;
+		}
+		#lp-logo {
+			@include centre(y);
+			@media (min-width: 1401px) and (max-width:1900px) {
+				width: 200px;
+			}
+			@media (min-width: 1200px) and (max-width:1400px) {
+				width: 180px;
+			}
+			@include media-breakpoint-only(lg) {
+				width: 160px;
+			}
+			@include media-breakpoint-only(md) {
+				width: 130px;
+			}
+			@include media-breakpoint-down(sm) {
+				width: 130px;
+				@include centre(both);
+			}
+		}
+		.topbar-text {
+			color: #fff;
+			font-family: $pop-eold;
+			font-size: 2.188em;
+			text-transform: uppercase;
+			width: 65%;
+		    margin-left: auto;
+		    margin-right: auto;
+		    @media (min-width: 1401px) and (max-width:1900px) {
+				font-size: 28px;
+			}
+		    @media (min-width: 1200px) and (max-width:1400px) {
+				font-size: 25px;
+			}
+			@include media-breakpoint-only(lg) {
+				font-size: 25px;
+			    width: 80%;
+			    margin-right: 0;
+			}
+			@include media-breakpoint-only(md) {
+				font-size: 19px;
+			    width: 80%;
+			    margin-right: 0;
+			}
+			@include media-breakpoint-down(sm) {
+				font-size: 16px;
+				width: 100%;
+				display: none;
+			}
+			a {
+				color: inherit;
+			}
+		}
+	}
+}
+#lp-masheader {
+	position: relative;
+	margin-top: 111px;
+	height: 823px;
+	@include breakpoint (desktop) {
+		margin-top: 80px;
+		height: 750px;
+	}
+	@include media-breakpoint-only(lg) {
+		margin-top: 80px;
+		height: 740px;
+	}
+	@include media-breakpoint-only(md) {
+		margin-top: 60px;
+		height: 710px;
+	}
+	@include media-breakpoint-down(sm) {
+		position: static;
+       transform: none;
+		margin-top: 60px;
+		height: auto;
+	}
+	.l-headerbg-new, .r-headerbg-new, .card-artwork, .leaf-artwork {
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+	.l-headerbg-new {
+		position: absolute;
+		left: 45px;
+		top: 55px;
+		z-index: 1;
+		@include breakpoint (desktop) {
+    		left: 0;
+    		width: 180px;
+    		top: 0;
+    	}
+    	@include media-breakpoint-only(lg) {
+			left: 0;
+    		width: 180px;
+    		top: 0;
+		}
+	}
+	.r-headerbg-new {
+		position: absolute;
+		right: 42px;
+		top: 25px;
+		z-index: 1;
+		@include breakpoint (desktop) {
+    		right: 0;
+    		top: 0px;
+    		width: 180px;
+    	}
+    	@include media-breakpoint-only(lg) {
+			right: 0;
+    		top: 0px;
+    		width: 180px;
+		}
+	}
+	.card-artwork {
+		position: absolute;
+		left: -70px;
+    	top: 100px;
+		z-index: 1;
+		@include breakpoint (desktop) {
+    		top: 0px;
+    	}
+    	@include media-breakpoint-only(lg) {
+    		top: 50px;
+    		width: 300px;
+		}
+	}
+	.leaf-artwork {
+		position: absolute;
+		top: 75px;
+		right: -5px;
+		@include breakpoint (desktop) {
+    		right: -60px;
+    		top: -30px;
+    	}
+    	@include media-breakpoint-only(lg) {
+    		top: 0px;
+		    width: 400px;
+		    right: -60px
+		}
+	}
+	.video-area {
+		@include centre(x);
+		top: 0;
+		border: 9px solid $blue;
+		z-index: 1;
+		max-width: 1030px;
+    	width: 100%;
+    	@include breakpoint (desktop) {
+    		max-width: 900px;
+    	}
+    	@include media-breakpoint-only(lg) {
+	       max-width: 700px;
+	    }
+	    @include media-breakpoint-only(md) {
+	       max-width: 700px;
+	    }
+	    @include media-breakpoint-down(sm) {
+	       position: static;
+	       transform: none;
+	    }
+		iframe {
+			display: block;
+			@include breakpoint (desktop) {
+				height: 450px;
+			}
+			@include media-breakpoint-only(lg) {
+		       height: 450px;
+		    }
+			@include media-breakpoint-only(md) {
+		       height: 400px;
+		    }
+			@include media-breakpoint-down(sm) {
+       			height: 300px;
+    		}
+		}
+	}
+	#booking-div-wrap {
+		@include centre(x);
+	    bottom: 0px;
+    	width: 100%;
+    	@include media-breakpoint-down(sm) {
+			position: static;
+	       transform: none;
+		}
+    	#booking-div {
+    		position: static;
+	    	transform: none;
+    	}
+		header {
+			margin-bottom: 35px;
+			padding-left: 15px;
+			padding-right: 15px;
+			@include media-breakpoint-down(sm) {
+				margin-top: 35px;
+			}
+		    h2 {
+		    	font-family: $pop-semi;
+				font-size: 2.750em;
+				text-align: center;
+				color: #000;
+				@include breakpoint (desktop) {
+					font-size: 2.500em;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 2.125em;
+			    }
+				@include media-breakpoint-only(md) {
+			      	font-size: 1.875em;
+			    }
+				@include media-breakpoint-down(sm) {
+	       			font-size: 1.625em;
+	       			line-height: 2;
+	    		}
+				em {
+					font-style: normal;
+					display: inline-block;
+					position: relative;
+					&:after {
+						@include centre(x);
+						bottom: -10px;
+						content: '';
+						background: transparent url(../img/bg/custom-border.png) no-repeat;
+						background-size: 100%;
+						width: 100%;
+						height: 15px;
+						display: block;
+						@include media-breakpoint-down(sm) {
+			       			bottom: 0;
+			    		}
+					}
+				}
+				span {
+					display: inline-block;
+					padding: 0 12px;
+					height: 61px;
+					line-height: 68px;
+					border-radius: 31px;
+					background: #21d195;
+					text-align: center;
+					color: #fff;
+					margin-left: 8px;
+					margin-right: 8px;
+					@include media-breakpoint-down(sm) {
+		       			height: 46px;
+						line-height: 50px;
+		    		}
+				}
+		    }
+		}
+	}
+}
+
+.slogan {
+	background-color: $blue;
+	padding-top: 33px;
+	padding-bottom: 33px;
+	h6 {
+		font-family: $pop-eold;
+		font-size: 2.188em;
+		text-align: center;
+		color: #fff;
+		margin: 0;
+		text-transform: uppercase;
+		@include breakpoint (desktop) {
+			font-size: 1.875em;
+		}
+		@include media-breakpoint-only(lg) {
+	      	font-size: 1.625em;
+	    }
+		@include media-breakpoint-only(md) {
+	      	font-size: 1.4em;
+	    }
+		@include media-breakpoint-down(sm) {
+   			font-size: 1.2em;
+		}
+	}
+}
+
+.cta-slogan {
+	margin-top: 80px;
+}
+
+#clients-area {
+	margin-top: 20px;
+	.slogan {
+		margin-bottom: 65px;
+		@include breakpoint (desktop) {
+			margin-bottom: 55px;
+		}
+		@include media-breakpoint-only(lg) {
+	      	margin-bottom: 45px;
+	    }
+		@include media-breakpoint-only(md) {
+	      	margin-bottom: 40px;
+	    }
+		@include media-breakpoint-down(sm) {
+   			margin-bottom: 35px;
+		}
+	}
+	.client-block {
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			align-items: center;
+		}
+		margin-bottom: 130px;
+		@include breakpoint (desktop) {
+			margin-bottom: 100px;
+		}
+		@include media-breakpoint-only(lg) {
+	       margin-bottom: 80px;
+	    }
+		@include media-breakpoint-only(md) {
+	      	margin-bottom: 60px;
+	    }
+		@include media-breakpoint-down(sm) {
+   			margin-bottom: 40px;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+			.client-content {
+				padding-left: 5%;
+				@include media-breakpoint-only(lg) {
+					padding-left: 2%;
+				}
+				@include media-breakpoint-only(md) {
+					padding-left: 1%;
+				}
+				@include media-breakpoint-down(sm) {
+					padding-left: 0;
+				}
+			}
+			.client-image {
+				margin-right: auto;
+			}
+		}
+		&:nth-child(even) {
+			.client-content {
+				padding-right: 5%;
+				@include media-breakpoint-only(lg) {
+					padding-right: 2%;
+				}
+				@include media-breakpoint-only(md) {
+					padding-right: 1%;
+				}
+				@include media-breakpoint-down(sm) {
+					padding-right: 0;
+				}
+			}
+			.client-image {
+				margin-left: auto;
+			}
+		}
+		.client-content {
+			@include media-breakpoint-up(sm) {
+				width: 46%;
+			}
+			h3 {
+				font-family: $pop-semi;
+				font-size: 2.750em;
+				text-align: left;
+				color: #000;
+				margin-bottom: 45px;
+				@include breakpoint (desktop) {
+					font-size: 2.500em;
+					margin-bottom: 35px;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 2.125em;
+			       margin-bottom: 30px;
+			    }
+				@include media-breakpoint-only(md) {
+			      	font-size: 1.875em;
+			      	margin-bottom: 25px;
+			    }
+				@include media-breakpoint-down(sm) {
+		   			font-size: 1.625em;
+		   			margin-bottom: 20px;
+				}
+			}
+			p {
+				font-family: $pop-reg;
+				font-size: 1.125em;
+				line-height: 1.78;
+				text-align: left;
+				color: #000;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				@include breakpoint (desktop) {
+				font-size: 1.063em;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 1.063em;
+			    }
+				@include media-breakpoint-only(md) {
+			       font-size: 1em;
+			    }
+				@include media-breakpoint-down(sm) {
+			        font-size: 0.938em;
+			    }
+			}
+		}
+		.client-image {
+		    position: relative;
+		    @include media-breakpoint-up(sm) {
+				width: 49%;
+				height: 447px;
+			}
+			 @include media-breakpoint-down(sm) {
+				margin-top: 20px;
+			}
+			img {
+				border-radius: 20px;
+				box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.16);
+				  @include media-breakpoint-up(sm) {
+					object-fit: cover;
+					height: 447px; 
+				}
+			}
+		}
+	}
+}
+
+#process {
+	margin-top: 60px;
+	.slogan {
+		margin-bottom: 115px;
+		@include breakpoint (desktop) {
+			margin-bottom: 80px;
+		}
+		@include media-breakpoint-only(lg) {
+	       margin-bottom: 70px;
+	    }
+		@include media-breakpoint-only(md) {
+	      	margin-bottom: 60px;
+	    }
+		@include media-breakpoint-down(sm) {
+   			margin-bottom: 50px;
+		}
+	}
+}
+
+.lp-bookinga-area {
+	background-color: $blue!important;
+	h3 {
+    	font-family: $pop-semi;
+		font-size: 2.750em;
+		text-align: center;
+		color: #000;
+		@include breakpoint (desktop) {
+			font-size: 2.500em;
+		}
+		@include media-breakpoint-only(lg) {
+	       font-size: 2.125em;
+	    }
+		@include media-breakpoint-only(md) {
+	      	font-size: 1.875em;
+	    }
+		@include media-breakpoint-down(sm) {
+   			font-size: 1.625em;
+		}
+		span {
+			display: inline-block;
+			padding: 0 12px;
+			height: 61px;
+			line-height: 68px;
+			border-radius: 31px;
+			background: #21d195;
+			text-align: center;
+			color: #fff;
+			margin-left: 14px;
+			margin-right: 18px;
+		}
+    }
+}
+
+
+
+
+/*===============================
+=            Thankyou            =
+===============================*/
+
+
+#thankyou {
+	background-image: url(../img/bg/shape-left.png), url(../img/bg/shape-right.png), url(../img/bg/shape-left.png), url(../img/bg/shape-right.png);
+  	background-position: left 45px top 55px, right 42px top 20px, left 45px top 881px, right 42px top 881px;
+  	background-repeat: no-repeat, no-repeat;
+	margin-top: 111px;
+	min-height: 90vh;
+	padding-bottom: 150px;
+	@include small-lap {
+		background-position: left 10px top 10px, right 42px top 20px, left 45px top 881px, right 42px top 881px;
+	}
+	@include breakpoint (desktop) {
+		margin-top: 80px;
+		padding-bottom: 100px;
+	}
+	@include media-breakpoint-only(lg) {
+		margin-top: 80px;
+		padding-bottom: 80px;
+		background-size: 150px;
+		background-position: left 5px top 100px, right 42px top 40px, left 45px top 600px, right 42px top 600px;
+	}
+	@include media-breakpoint-only(md) {
+		margin-top: 60px;
+		background-position: left 5px top 100px, right 42px top 40px, left 45px top 600px, right 42px top 600px;
+		background-size: 150px;
+		padding-bottom: 80px;
+		
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: 60px;
+		background: none!important;
+		min-height: auto
+	}
+	h2 {
+		padding-top: 45px;
+		font-family: $pop-semi;
+		font-size: 2.750em;
+		text-align: center;
+		color: #000;
+		margin-bottom: 0px;
+		@include breakpoint (desktop) {
+			font-size: 2.500em;
+		}
+		@include media-breakpoint-only(lg) {
+	       font-size: 2.125em;
+	    }
+		@include media-breakpoint-only(md) {
+	      	font-size: 1.875em;
+	      	padding-top: 25px;
+	    }
+		@include media-breakpoint-down(sm) {
+			padding-top: 15px;
+			font-size: 1.625em;
+			line-height: 2;
+		}
+		em {
+			font-style: normal;
+			display: inline-block;
+			position: relative;
+			&:after {
+				@include centre(x);
+				bottom: -10px;
+				content: '';
+				background: transparent url(../img/bg/custom-border.png) no-repeat;
+				width: 100%;
+				height: 15px;
+				display: block;
+				@include media-breakpoint-down(sm) {
+	       			bottom: 0;
+	    		}
+			}
+		}
+		span {
+			display: inline-block;
+			padding: 0 12px;
+			height: 61px;
+			line-height: 68px;
+			border-radius: 31px;
+			background: #21d195;
+			text-align: center;
+			color: #fff;
+			margin-left: 8px;
+			margin-right: 8px;
+			@include media-breakpoint-down(sm) {
+	   			height: 46px;
+				line-height: 50px;
+			}
+		}
+	}
+	.thankyou-block {
+		display: flex;
+		align-items: center;
+		@include media-breakpoint-down(sm) {
+			margin-top: 30px;
+		}
+		.ty-content {
+			min-width: 570px;
+			@include small-lap {
+				margin-top: -200px;
+			}
+			@include media-breakpoint-only(md) {
+				min-width: 64%;
+			}
+			@include media-breakpoint-down(sm) {
+				text-align: center;
+				min-width: 100%;
+			}
+			h1 {
+				font-style: normal;
+				display: inline-block;
+				position: relative;
+				font-family: $pop-bold;
+				font-size: 4.688em;
+				line-height: 1.17;
+				text-align: center;
+				color: #15004e;
+				margin-bottom: 75px;
+				text-transform: uppercase;
+				@include breakpoint (desktop) {
+					font-size: 3.750em;
+					margin-bottom: 60px;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 2.813em;
+			       margin-bottom: 50px;
+			    }
+				@include media-breakpoint-only(md) {
+			      	font-size: 2.188em;
+			      	margin-bottom: 40px;
+			    }
+				@include media-breakpoint-down(sm) {
+						font-size: 1.750em;
+						line-height: 2;
+						margin-bottom: 40px;
+				}
+				&:after {
+					@include centre(x);
+					bottom: -25px;
+					content: '';
+					background: transparent url(../img/bg/custom-border-long.png) no-repeat;
+					background-size: 100%;
+					width: 100%;
+					height: 36px;
+					display: block;
+					@include media-breakpoint-only(lg) {
+						bottom: -30px;
+					}
+				}
+			}
+			p {
+				font-family: Poppins;
+				font-weight: normal;
+				font-size: 2.750em;
+				line-height: 1;
+				color: #000;
+				text-transform: uppercase;
+				@include breakpoint (desktop) {
+					font-size: 2.500em;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 2.125em;
+			    }
+				@include media-breakpoint-only(md) {
+			      	font-size: 1.875em;
+			    }
+				@include media-breakpoint-down(sm) {
+	       			font-size: 1.625em;
+	    		}
+			}
+		}
+		.ty-images {
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    @include breakpoint (desktop) {
+				margin-left: -70px;
+			}
+		    .leaf-artwork {
+				margin-left: -130px;
+			    position: relative;
+			    bottom: 15px;
+			}
+		}
+	}
+	.when-block {
+			max-width: 970px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			margin-top: -20px;
+			h3 {
+				font-family: $pop-reg;
+				font-size: 2.750em;
+				line-height: 1;
+				text-align: center;
+				color: #000;
+				text-transform: uppercase;
+				@include breakpoint (desktop) {
+					font-size: 2.500em;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 2.125em;
+			    }
+				@include media-breakpoint-only(md) {
+			      	font-size: 1.875em;
+			    }
+				@include media-breakpoint-down(sm) {
+	       			font-size: 1.625em;
+	       			margin-top: 30px;
+	    		}
+			}
+			.when-buttons {
+				margin-top: 25px;
+				@include media-breakpoint-up(sm) {
+					display: flex;
+				}
+				a {
+					width: 370px;
+					height: 77px;
+					line-height: 77px;
+					border-radius: 38.5px;
+					font-family: $pop-bold;
+					font-size: 20px;
+					text-align: center;
+					color: #fff;
+					display: inline-block;
+					text-transform: uppercase;
+					@include media-breakpoint-only(lg) {
+						width: 300px;
+						height: 65px;
+						line-height: 65px;
+						font-size: 18px;
+					}
+					@include media-breakpoint-only(md) {
+						width: 45%;
+						height: 55px;
+						line-height: 55px;
+						font-size: 17px;
+					}
+					@include media-breakpoint-down(sm) {
+						width: 100%!important;
+						height: 55px;
+						line-height: 55px;
+						font-size: 17px;
+						display: block;
+						margin-bottom: 15px;
+					}
+					&:first-of-type {
+						background: $blue;
+						&:hover {
+							background: $orange;
+						}
+					}
+					&:last-of-type {
+						background: $orange;
+						margin-left: auto;
+						&:hover {
+							background: $blue;
+						}
+					}
+
+				}
+			}
+		}
+}
+
+// Form
+#booking-form--lp {
+	margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    padding: 35px;
+	height: 148px;
+	display: flex;
+	align-items: center;
+	@include media-breakpoint-only(md) {
+		height: auto;
+		padding:30px;
+		display: block;
+	}
+	@include media-breakpoint-down(sm) {
+		display: block;
+		padding:30px;
+		height: auto;
+	}
+	.col-form {
+		@include media-breakpoint-only(md) {
+			width: 100%;
+			margin-left:0px;
+		}
+	}
+	.col-intro {
+		@include media-breakpoint-only(md) {
+			height: auto!important;
+		}
+	}
+	h3 {
+		font-family: $pop-bold;
+		font-size: 1.625em;
+		text-align: center;
+		text-transform: uppercase;
+		color: $orange;
+		margin-bottom: 0;	
+		@include media-breakpoint-only(lg) {
+			font-size: 1.25em;
+		}
+		@include media-breakpoint-only(md) {
+			text-align: center;
+		}
+		@include media-breakpoint-down(sm) {
+			padding-top: 0px !important;
+			margin-top: 0px !important;
+		}	
+	}
+	label {
+		display: none;
+	}
+	.gform_confirmation_message {
+		margin-top: 0px !important;
+	}
+	.gform_wrapper {
+		margin:0px;
+		.validation_message {
+			font-size: 11px !important;
+		}
+		li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+			padding-top: 4px !important;
+			padding-bottom: 4px !important;
+			margin-bottom: 0px !important;
+		}		
+	}
+	#gform_page_4_1, #gform_page_5_1 {
+		display: flex;
+		align-items: center;
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+		.gform_page_footer {
+			width: 128px;
+			margin:0px;
+			border:none;
+			padding:0px;
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+				margin-top: 15px;
+			}
+			input[type="button"], input[type="submit"] {
+				padding: 0;
+				border: 0;
+				width: 128px;
+				height: 78px;
+				text-align: center;
+				border-radius: 15px;
+				background: url('https://merchantchimp.com/wp-content/uploads/2020/03/Long-arrow-right-1.png') no-repeat center center;
+				background-color: $orange;
+				@include animate-fade;
+				font-size: 0px;
+				@include media-breakpoint-down(sm) {
+				  height: 98px;
+				  height: 58px;
+				}
+			}			
+		}
+		.gform_page_fields {
+			flex:1;
+		}
+	}
+	#gform_page_4_2 , #gform_page_5_2 {
+		display: flex;
+		align-items: center;
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+		.gform_page_fields {
+			flex:1;
+		}		
+		.gform_page_footer {
+			width: 290px;
+			margin:0px;
+			border:none;
+			padding:0px;	
+			input[type="button"], input[type="submit"] {
+				padding: 0;
+				border: 0;
+				width: 128px;
+				height: 78px;
+				text-align: center;
+				border-radius: 15px;
+				background: url('https://merchantchimp.com/wp-content/uploads/2020/03/Long-arrow-right-1.png') no-repeat center center;
+				background-color: $orange;
+				@include animate-fade;
+				font-size: 0px;
+				@include media-breakpoint-down(sm) {
+				  height: 98px;
+				  height: 58px;
+				}
+			}	
+			input[type="button"] {
+				background: url(https://merchantchimp.com/wp-content/uploads/2020/03/Long-arrow-left-2.png) no-repeat center center!important;
+				background-color: #FFAF32!important;				
+			}					
+		}
+	}
+	ul.gform_fields  {
+		display:flex;
+		align-items: center;
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+		// validation
+		.gfield_description {
+			padding-top: 5px;
+			font-size: 12px;
+			margin-bottom: 0px !important;
+		}
+		div.ginput_container {
+			margin:0px;
+		}
+		li.gfield {
+			margin:0px;
+			width: 100%;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 10px;
+			}
+			select {
+				display: block;
+				width: 100%;
+				height: 42px;
+				border-radius: 5px;
+				background: transparent;
+				border: 1px solid #969ca2;
+				font-family: "poppinsregular";
+				font-size: 0.938em;
+				padding: 0 20px;
+				position: relative;
+				z-index: 9;				
+			}
+			input[type="text"] {
+				display: block;
+				width: 100%;
+				height: 42px;
+				border-radius: 5px;
+				background: transparent;
+				border: 1px solid #969ca2;
+				font-family: "poppinsregular";
+				font-size: 0.938em;
+				padding: 0 20px;
+				position: relative;
+				z-index: 9;
+			}
+		}
+	}
+}

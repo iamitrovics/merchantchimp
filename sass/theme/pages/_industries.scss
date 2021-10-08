@@ -1,0 +1,694 @@
+/*===============================
+=       Industries Listing     =
+===============================*/
+
+#industries-listing {
+	&.industries-detailed {
+		#testimonials {
+			margin-top: 0!important;
+		}
+		#video-block {
+			@media (min-width:2500px) {
+		    	margin-top: 100px!important;
+		    }
+			margin-bottom: 65px!important;
+		}
+		.about-block--content {
+			margin-top: 30px!important;
+			margin-bottom: 130px!important;
+			@include breakpoint (desktop) {
+				margin-bottom: 110px!important;
+			}
+			@include media-breakpoint-only(lg) {
+		      margin-bottom: 80px!important;
+		    }
+			@include media-breakpoint-only(md) {
+		      	margin-bottom: 70px!important;
+		    }
+			@include media-breakpoint-down(sm) {
+		        margin-bottom: 60px!important;
+		        margin-top: 0!important;
+		    }
+		}
+		#benefits {
+			margin-bottom: 70px!important;
+			@include media-breakpoint-only(lg) {
+		      margin-bottom: 50px!important;
+		    }
+			@include media-breakpoint-only(md) {
+		      	margin-bottom: 30px!important;
+		    }
+			@include media-breakpoint-down(sm) {
+		        margin-bottom: 0px!important;
+		    }
+		}
+		#services .list-all-wrap a {
+			@include media-breakpoint-up(lg) {
+				margin-top: 40px!important;
+			}
+			
+		}
+		#services .services-box {
+			@include media-breakpoint-down(sm) {
+		        margin-bottom: 40px!important;
+		    }
+		}
+		#process {
+			margin-top: 90px!important;
+			@include media-breakpoint-only(lg) {
+		      margin-top: 70px!important;
+		    }
+			@include media-breakpoint-only(md) {
+		      	margin-top: 60px!important;
+		    }
+			@include media-breakpoint-down(sm) {
+		        margin-top: 50px!important;
+		    }
+		}
+	}
+	#video-block {
+	    @media (min-width:2500px) {
+	    	margin-top: 250px;
+	    }
+		margin-top: 100px;
+		margin-bottom: 145px;
+		@include breakpoint (desktop) {
+			margin-top: 90px;
+			margin-bottom: 130px;
+		}
+		@include media-breakpoint-only(lg) {
+	      margin-top: 70px;
+	      margin-bottom: 110px;
+	    }
+		@include media-breakpoint-only(md) {
+	      	margin-top: 60px;
+	      	margin-bottom: 90px;
+	    }
+		@include media-breakpoint-down(sm) {
+	        margin-top: 50px;
+	        margin-bottom: 60px;
+	    }
+
+		header {
+			text-align: center;
+			margin-bottom: 65px;
+			@include media-breakpoint-only(lg) {
+		       margin-bottom: 60px;
+		    }
+			@include media-breakpoint-only(md) {
+		      	margin-bottom: 50px;
+		    }
+			@include media-breakpoint-down(sm) {
+		        margin-bottom: 40px;
+		    }
+		    .title {
+				@include subheading-font;
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 10px;
+				}
+			}
+			h2 {
+				@include heading-font;
+				margin-bottom: 20px;
+			}
+			p {
+				font-family: $pop-reg;
+				font-size: 1.125em;
+				text-align: center;
+				color: $text-color;
+				max-width: 770px;
+				margin-left: auto;
+				margin-right: auto;
+				@include breakpoint (desktop) {
+					font-size: 1.063em;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 1.063em;
+			    }
+				@include media-breakpoint-only(md) {
+			       font-size: 1em;
+			    }
+				@include media-breakpoint-down(sm) {
+	       			font-size: 0.938em;
+	    		}
+	    		strong {
+	    			font-weight: normal;
+	    			font-family: $pop-bold;
+	    		}
+			}
+		}
+		.video-area {
+			border: 9px solid $blue;
+			border-bottom: 0;
+			iframe {
+				display: block;
+				@include breakpoint (desktop) {
+					height: 550px;
+				}
+				@include media-breakpoint-only(lg) {
+			       height: 500px;
+			    }
+				@include media-breakpoint-only(md) {
+			       height: 400px;
+			    }
+				@include media-breakpoint-down(sm) {
+	       			height: 300px;
+	    		}
+			}
+			p {
+				margin-bottom: 0px !important;
+			}
+		}
+		a.quote {
+			@include button;
+			width: 100%;
+			background-color: $blue;
+		}
+	}
+	#industries-list {
+		header {
+			text-align: center;
+			margin-bottom: 80px;
+			@include breakpoint (desktop) {
+				margin-bottom: 70px;
+			}
+			@include media-breakpoint-only(lg) {
+		      margin-bottom: 60px;
+		    }
+			@include media-breakpoint-only(md) {
+		      	margin-bottom: 50px;
+		    }
+			@include media-breakpoint-down(sm) {
+		       margin-bottom: 40px;
+		    }
+			.title {
+				@include subheading-font;
+				margin-bottom: 15px;
+			}
+			h3 {
+				@include heading-font;
+				margin-bottom: 25px;
+				@include media-breakpoint-down(sm) {
+	       			margin-bottom: 15px;
+	    		}
+			}
+			h6 {
+				font-family: $pop-reg;
+				font-size: 1.125em;
+				line-height: 26px;
+				text-align: center;
+				color: $text-color;
+				max-width: 770px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				@include breakpoint (desktop) {
+					font-size: 1.1em;
+				}
+				@include media-breakpoint-only(lg) {
+			       font-size: 1.063em;
+			    }
+				@include media-breakpoint-only(md) {
+			       font-size: 1em;
+			    }
+				@include media-breakpoint-down(sm) {
+	       			font-size: 1em;
+	    		}
+			}
+		}
+		.industries-box {
+			margin-bottom: 55px;
+			h4 {
+				font-family: $pop-med;
+				font-size: 1.375em;
+				text-align: center;
+				color: $orange;
+				margin-bottom: 15px;
+				text-align: center;
+			}
+			.industries-image {
+				position: relative;
+				img {
+					border-radius: 20px;
+					width: 100%;
+					box-shadow: 0px 0px 20px #00000029;
+				}
+				&:hover {
+					.overlay {
+						opacity: 1;
+					}
+					a {
+						opacity: 1;
+					}
+				}
+			}
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(#15004e, .7);
+				border-radius: 20px;
+				@include animate-fade;
+				opacity: 0;
+			}
+			a {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+
+				span {
+					text-align: center;
+					font-family: $pop-bold;
+					color: #fff;
+					font-size: 1.375em;
+					@include animate-fade;
+					text-transform: uppercase;
+					position: relative;
+					z-index: 1;
+					@include breakpoint (desktop) {
+						font-size: 1.063em;
+					}
+					@include media-breakpoint-only(lg) {
+				       font-size: 1.063em;
+				    }
+					@include media-breakpoint-only(md) {
+				       font-size: 1em;
+				    }
+					@include media-breakpoint-down(sm) {
+		       			font-size: 0.938em;
+		    		}
+				}
+			}
+		}
+	}
+	#benefits-more {
+		margin-top: 60px;
+		@include media-breakpoint-only(md) {
+   			margin-top: 0;
+		}
+		@include media-breakpoint-down(sm) {
+   			margin-top: 0;
+		}
+		a.book {
+			@include media-breakpoint-down(sm) {
+				margin-top: 0;
+			}
+		}
+		.benefit-block--text {
+			@include media-breakpoint-down(sm) {
+	   			margin-top: 20px;
+			}
+		}
+	}
+
+	#testimonials {
+		@include media-breakpoint-only(md) {
+   			margin-top: 30px;
+		}
+		@include media-breakpoint-down(sm) {
+   			margin-top: 10px;
+		}
+	}
+
+	.about-block--content {
+		position: relative;
+		margin-top: 130px;
+		margin-bottom: 340px;
+		@include breakpoint (desktop) {
+			margin-bottom: 120px;
+			margin-top: 100px;
+		}
+		@include media-breakpoint-only(lg) {
+			margin-bottom: 100px;
+			margin-top: 80px;
+		}	
+		@include media-breakpoint-only(md) {
+			margin-bottom: 80px;
+			margin-top: 60px;
+		}
+		@include media-breakpoint-down(sm) {
+	        margin-bottom: 50px;
+	        margin-top: 60px;
+	    }
+		.container {
+			flex-direction: row-reverse;
+			@include media-breakpoint-up(sm) {
+				display: flex;
+			}
+		}
+		.quote-area {
+			margin-top: 70px;
+			text-align: center;
+			@include media-breakpoint-only(lg) {
+		       margin-top: 60px;
+		    }
+			@include media-breakpoint-only(md) {
+		      	margin-top: 40px;
+		    }
+		    @include media-breakpoint-down(sm) {
+		      	display: none;
+		    }
+			a {
+				@include button;
+				width: 100%;
+				display: block;
+			}
+			.container, .row {
+				width: 100%;
+			}
+		}
+		.about-lshape {
+			position: absolute;
+			left: 0;
+			top: 0;
+			max-width: 900px;
+   			width: 55vw;
+   			@include media-breakpoint-only(lg) {
+		        width: 45vw;
+		    }
+		    @include media-breakpoint-only(md) {
+		        width: 45vw;
+		    }
+		    @include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+		.about-block--text {
+			max-width: 470px;
+			position: relative;
+			z-index: 1;
+			margin-left: auto;
+			@include media-breakpoint-only(md) {
+		         padding-right: 0;
+		        max-width: 380px;
+			    padding-left: 30px;
+		    }
+			.title {
+				@include subheading-font;
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 10px;
+				}
+			}
+			h3 {
+				@include heading-font;
+				margin-bottom: 35px;
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 25px;
+				}
+			}
+			p {
+				@include text-font;
+				margin-bottom: 20px;
+				strong {
+					font-weight: 400;
+					font-family: $pop-bold;
+					margin-bottom: 0;
+				}
+			}
+			.see-all {
+				margin-top: 30px;
+				@include button2;
+				@include media-breakpoint-down(sm) {
+					margin-top: 0;
+				}
+			}
+		}
+		.about-block--image {
+			position: relative;
+			z-index: 1;
+			margin-left: 0;
+			img {
+				max-width: 90%;
+			}
+			@include media-breakpoint-only(lg) {
+		        width: 400px;
+		    }
+		    @include media-breakpoint-only(md) {
+		        width: 300px;
+		    }
+		    @include media-breakpoint-down(sm) {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				margin-top: 40px;
+		    }
+		    img {
+		    	@include media-breakpoint-down(sm) {
+					max-width: 203px;
+		    	}
+		    }
+		    .mobile-shape {
+				@include media-breakpoint-up(sm) {
+					display: none;
+		    	}
+				opacity: 1;
+				max-width: 90vw;
+				z-index: -1;
+				@include centre(y);
+				left: -15px;
+			}
+		}
+		.about-book-mobile {
+			text-align: center;
+		}
+		.book {
+			margin-top: 30px;
+			@include button2;
+			@include media-breakpoint-down(sm) {
+				margin-top: 10px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+}
+
+// Industry
+.industry-header {
+	height: auto!important;
+	min-height: 900px;
+    h1 {
+        max-width: 50%!important;
+		@include media-breakpoint-down(sm) {
+			max-width: 100%!important;
+		}
+    }
+	p {
+		max-width: 50%!important;
+		@include media-breakpoint-down(sm) {
+			max-width: 100%!important;
+		}		
+	}
+	.r-headerbg {
+		width: 54vw!important;
+		@include media-breakpoint-down(sm) {
+			width: 90%!important;
+		}		
+	}
+}
+
+// Intro
+#industries-intro {
+	text-align: center;
+	@media (min-width:2500px) {
+		margin-top: 250px;
+	}
+	margin-top: 100px;
+	margin-bottom: 70px;
+	@include breakpoint (desktop) {
+		margin-top: 90px;
+		margin-bottom: 80px;
+	}
+	@include media-breakpoint-only(lg) {
+	  margin-top: 70px;
+	  margin-bottom: 70px;
+	}
+	@include media-breakpoint-only(md) {
+		  margin-top: 60px;
+		  margin-bottom: 90px;
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
+
+	header {
+		text-align: center;
+		margin-bottom: 65px;
+		@include media-breakpoint-only(lg) {
+		   margin-bottom: 60px;
+		}
+		@include media-breakpoint-only(md) {
+			  margin-bottom: 50px;
+		}
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 40px;
+		}
+		.title {
+			@include subheading-font;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 10px;
+			}
+		}
+		h2 {
+			@include heading-font;
+			margin-bottom: 20px;
+		}
+		ul {
+			margin-bottom: 30px;
+			li {
+				margin-bottom: 30px;
+				@include media-breakpoint-down(md) {
+					padding-left: 0px;
+				}
+				&:before {
+					content:'';
+					width: 8px;
+					height: 8px;
+					background:$blue;
+					display: inline-block;
+					margin-right: 15px;
+					position: relative;
+					top:-3px;
+				}
+			}
+		}
+		p {
+			font-family: $pop-reg;
+			font-size: 1.125em;
+			text-align: center;
+			color: $text-color;
+			max-width: 770px;
+			margin-left: auto;
+			margin-right: auto;
+			@include breakpoint (desktop) {
+				font-size: 1.063em;
+			}
+			@include media-breakpoint-only(lg) {
+			   font-size: 1.063em;
+			}
+			@include media-breakpoint-only(md) {
+			   font-size: 1em;
+			}
+			@include media-breakpoint-down(sm) {
+				   font-size: 0.938em;
+			}
+			strong {
+				font-weight: normal;
+				font-family: $pop-bold;
+			}
+		}
+	}
+	.video-area {
+		border: 9px solid $blue;
+		border-bottom: 0;
+		p {
+			margin-bottom: 0px !important;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	a.quote {
+		@include button;
+		width: 100%;
+		background-color: $blue;
+	}	
+}
+
+// ind
+#industries-content {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include media-breakpoint-down(md) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.content-block {
+		display: flex;
+		margin-bottom: 50px;
+		@include media-breakpoint-down(md) {
+			display: block;
+		}
+		&:nth-child(even) {
+			.text-content {
+				order:2;
+				padding-right: 0px;
+				padding-left: 50px;
+				@include media-breakpoint-down(md) {
+					padding-left: 0px;
+				}
+			}
+		}
+		.text-content {
+			width: 55%;
+			padding-right: 50px;
+			@include media-breakpoint-down(md) {
+				width: 100%;
+				padding-right: 0px;
+			}
+			h3 {
+				@include heading-font;				
+			}
+			p {
+				@include text-font;
+			}
+			ul {
+				margin-bottom: 30px;
+				li {
+					margin-bottom: 10px;
+					font-size: 1.125em;
+					line-height: 1.44;		
+					color:#808080;
+					position: relative;
+					padding-left: 33px;
+					&:before {
+						content:'';
+						width: 8px;
+						height: 8px;
+						display: block;
+						position: absolute;
+						left:0px;
+						top:7px;
+						background: $blue;
+					}
+					strong {
+						color:$black;
+					}
+				}				
+			}
+			.btn-cta {
+				margin-top: 30px;
+				@include button2;
+				@include media-breakpoint-down(sm) {
+					margin-top: 0;
+				}				
+			}
+		}
+		.content-image {
+			width: 45%;
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+				border-radius:30px;
+				@include media-breakpoint-down(md) {
+					height: 350px;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}

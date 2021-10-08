@@ -1,0 +1,118 @@
+// Import fonts and fonts variables
+
+@font-face {
+    font-family: 'Gilmer-Light';
+    src: url('../fonts/Gilmer-Light.woff2') format('woff2'),
+        url('../fonts/Gilmer-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilmer-Bold';
+    src: url('../fonts/Gilmer-Bold.woff2') format('woff2'),
+        url('../fonts/Gilmer-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilmer-Medium';
+    src: url('../fonts/Gilmer-Medium.woff2') format('woff2'),
+        url('../fonts/Gilmer-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilmer-Heavy';
+    src: url('../fonts/Gilmer-Heavy.woff2') format('woff2'),
+        url('../fonts/Gilmer-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilmer-Regular';
+    src: url('../fonts/Gilmer-Regular.woff2') format('woff2'),
+        url('../fonts/Gilmer-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilmer-Regular';
+    src: url('../fonts/Gilmer-Regular.woff2') format('woff2'),
+        url('../fonts/Gilmer-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Med';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MontserratReg';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-main: 'MontserratReg';
+$font-heading:'Gilmer-Bold';
+$font-bold:'Gilmer-Bold';
+$font-med:'Gilmer-Medium';
+$font-light:'Gilmer-Light';
+$font-lightsec:'MontserratLight';
+$font-heavy:'Gilmer-Heavy';
+
+body { 
+	font: {
+		size:$base-size;
+		family: $font-main;
+	}
+	-webkit-text-size-adjust: 100%;  //fix for iOS
+	overflow-x:hidden;    
+}
+
+p {
+    color:#95939c;
+    font-size: 1.125em;
+    line-height: 1.5;
+    font-family: $font-main;
+}
+
+ul {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    font-weight: bold;
+    color:$heading;
+}

@@ -1,0 +1,51 @@
+/*===============================
+=          About Inner         =
+===============================*/
+
+.about-inner {
+	.about-block--content {
+		@include breakpoint (desktop-lg) {
+			margin-bottom: 220px!important;
+		}
+	}
+	#testimonials {
+		@include breakpoint (desktop-lg) {
+			margin-top: 80px!important;
+		}
+		@include media-breakpoint-only(lg) {
+	      margin-top: 80px!important;
+	    }
+		@include media-breakpoint-only(md) {
+	      	margin-top: 80px!important;
+	    }
+		@include media-breakpoint-down(sm) {
+	        margin-top: 70px!important;
+	    }
+	}
+	#process {
+		margin-top: 70px!important;
+		@include media-breakpoint-only(lg) {
+	      margin-top: 50px!important;
+	    }
+		@include media-breakpoint-only(md) {
+	      	margin-top: 30px!important;
+	    }
+		@include media-breakpoint-down(sm) {
+	        margin-top: 0px!important;
+	    }
+	}
+	#industries-list {
+		margin-bottom: 70px!important;
+		@include media-breakpoint-only(lg) {
+	      margin-bottom: 50px!important;
+	    }
+		@include media-breakpoint-only(md) {
+	      	margin-bottom: 30px!important;
+	    }
+		@include media-breakpoint-down(sm) {
+	        margin-bottom: 0px!important;
+	    }
+	}
+}
+
+/*=====  End of About Inner  ======*/

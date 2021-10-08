@@ -1,0 +1,196 @@
+/*===============================
+=           Footer            =
+===============================*/
+
+#page-footer {
+	.col {
+		&:first-of-type {
+			min-width: 30%;
+			@include media-breakpoint-only(md) {
+				min-width: 35%;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			min-width: 100%!important;
+		}
+		&:nth-of-type(2) {
+			ul {
+				@include media-breakpoint-down(sm) {
+					-moz-column-count: 2;
+				    -moz-column-gap: 20px;
+				    -webkit-column-count: 2;
+				    -webkit-column-gap: 20px;
+				    column-count: 2;
+				    column-gap: 20px;
+				}
+			}
+		}
+	}
+	.footer-sitemap {
+		margin-top: 40px;
+		h4 {
+			font-family: $pop-med;
+			font-size: 1.500em;
+			line-height: 28px;
+			text-align: left;
+			color: #15004e;
+			margin-bottom: 30px;
+			@include breakpoint (desktop) {
+				font-size: 1.375em;
+				line-height: 26px;
+			}	
+			@include media-breakpoint-only(lg) {
+				font-size: 1.313em;
+				line-height: 26px;
+			}	
+			@include media-breakpoint-only(md) {
+				font-size: 1.250em;
+				line-height: 24px;
+			}
+			@include media-breakpoint-down(sm) {
+				font-size: 1.500em;
+			}
+		}
+		ul {
+			li {
+				margin-bottom: 20px;
+				a {
+					font-family: $pop-reg;
+					font-size: 1.125em;
+					line-height: 28px;
+					text-align: left;
+					color: $blue;
+					&:hover {
+						color: $orange;
+					}
+					@include media-breakpoint-only(lg) {
+						font-size: 1.063em;
+						line-height: 27px;
+					}	
+					@include media-breakpoint-only(md) {
+						font-size: 1em;
+						line-height: 27px;
+					}
+				}
+			}
+		}
+		.footer-block {
+			display: flex;
+			align-items: center;
+			margin-bottom: 55px;
+			max-width:240px;
+			@include media-breakpoint-only(md) {
+				display: block;
+				margin-bottom: 20px;
+			}
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 45px;
+			}
+			.logo {
+				display: flex;
+				@include media-breakpoint-only(md) {
+					display: block;
+					margin-bottom: 15px;
+				}
+			}
+			address {
+				display: flex;
+				font-family: $pop-reg;
+				font-size: 0.875em;
+				line-height: 28px;
+				color: #808080;
+				padding-left: 30px;
+				@include media-breakpoint-only(md) {
+					display: block;
+					padding-left: 0;
+				}
+			}
+		}
+		.phone {
+			font-family: $pop-reg;
+			font-size: 1.125em;
+			line-height: 28px;
+			color: #808080;
+			a {
+				color: $blue;
+				&:hover {
+					color: $orange;
+				}
+			}
+			@include media-breakpoint-only(lg) {
+				font-size: 1.063em;
+				line-height: 27px;
+			}	
+			@include media-breakpoint-only(md) {
+				font-size: 1em;
+				line-height: 27px;
+			}
+		}
+		.email {
+			margin-top: 20px;
+			a {
+				font-family: $pop-reg;
+				font-size: 0.875em;
+				line-height: 28px;
+				text-align: left;
+				color: #808080;
+			}
+		}
+		.footer-socials {
+			margin-top: 50px;
+			@include media-breakpoint-only(md) {
+				margin-top: 20px;
+			}
+			@include media-breakpoint-down(sm) {
+				margin-top: 40px;
+			}
+			ul {
+				li {
+					display: inline-block;
+					margin-right: 30px;
+					@include media-breakpoint-only(md) {
+						margin-right: 15px;
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+					a {
+						color: $orange;
+						font-size: 38px;
+						@include media-breakpoint-only(lg) {
+							font-size: 34px;
+						}	
+						@include media-breakpoint-only(md) {
+							font-size: 28px;
+						}
+						&:hover {
+							color: $blue;
+						}
+					}
+				}
+			}
+		}
+	}
+	.copy-bar {
+		border-top: 1px solid $blue;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 45px;
+		small {
+			display: block;
+			font-family: $pop-reg;
+			font-size: 0.875em;
+			line-height: 28px;
+			text-align: left;
+			color: #969ca2;
+
+		}
+	}
+}
+
+
+
+
+/*=======End of Footer ========*/
+
+

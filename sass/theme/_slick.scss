@@ -1,0 +1,309 @@
+// Slick Slider
+
+ .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+/*===================================
+=            Slick Theme            =
+===================================*/
+
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Slider */
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("../img/ico/ajax-loader.gif") center center no-repeat;
+    }
+}
+
+
+#test-slider .slick-prev,
+#test-slider .slick-next {
+    position: absolute;
+    display: block;
+    height: 80px;
+    width: 40px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top:-80px;
+    padding: 0;
+    outline: none;
+    z-index: 999;
+    border:none;
+    @include animate-fade;
+    &:hover {
+        outline: none;
+        opacity: 1;
+        &:before {
+            color:$purple;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+    &:before {
+        font-family: $slick-font-family;
+        font-size: 26px;
+        line-height: 1;
+        color: $black;
+        opacity: $slick-opacity-default;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color:$black;
+        font-family: $slick-font-family;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Font Awesome 5 Pro';    
+        color:$white; 
+        @include animate-fade;
+        @include breakpoint(tablet) {
+            font-size: 22px;
+        }
+    }
+}
+
+#test-slider .slick-prev {
+    left: 0px;
+    background:$white;
+    &:before {
+        color:#b1b1b1;
+    }
+    [dir="rtl"] & {
+        left: auto;
+        right: 0px;
+    }
+    &:before {
+        content: '\f104';
+    }
+}
+
+#test-slider .slick-next {
+    left: 40px;
+    background:$white;
+    &:before {
+        color:#b1b1b1;
+    }
+    [dir="rtl"] & {
+        left: 0px;
+        right: auto;
+    }
+    &:before {
+        content: '\f105';
+    }
+}
+
+
+#services-slider .slick-prev,
+#services-slider .slick-next {
+    position: absolute;
+    display: block;
+    height: 80px;
+    width: 40px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top:-80px;
+    padding: 0;
+    outline: none;
+    z-index: 999;
+    border:none;
+    @include animate-fade;
+    &:hover {
+        outline: none;
+        opacity: 1;
+        &:before {
+            color:$purple;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+    &:before {
+        font-family: $slick-font-family;
+        font-size: 26px;
+        line-height: 1;
+        color: $black;
+        opacity: $slick-opacity-default;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color:$black;
+        font-family: $slick-font-family;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Font Awesome 5 Pro';    
+        color:$white; 
+        @include animate-fade;
+        @include breakpoint(tablet) {
+            font-size: 22px;
+        }
+    }
+}
+
+#services-slider .slick-prev {
+    left: 0px;
+    background:$white;
+    &:before {
+        color:#b1b1b1;
+    }
+    [dir="rtl"] & {
+        left: auto;
+        right: 0px;
+    }
+    &:before {
+        content: '\f104';
+    }
+}
+
+#services-slider .slick-next {
+    left: 40px;
+    background:$white;
+    &:before {
+        color:#b1b1b1;
+    }
+    [dir="rtl"] & {
+        left: 0px;
+        right: auto;
+    }
+    &:before {
+        content: '\f105';
+    }
+}
