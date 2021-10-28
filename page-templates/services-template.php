@@ -78,7 +78,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <?php the_sub_field('content_block'); ?>
 
                                 <?php if (get_sub_field('button_type') == 'Link to page') { ?>
-                                    <a href="<?php the_sub_field('link_to_page'); ?>"><span><i class="fas fa-phone-alt"></i> <?php the_sub_field('button_label'); ?></span></a>
+                                    <a href="<?php the_sub_field('link_to_page'); ?>"><span><i class="far fa-long-arrow-right"></i> <?php the_sub_field('button_label'); ?></span></a>
                                 <?php } elseif (get_sub_field('button_type') == 'Phone') { ?>
                                     <a href="tel:<?php the_sub_field('phone_number'); ?>"><span><i class="fas fa-phone-alt"></i> <?php the_sub_field('button_label'); ?></span></a>
                                 <?php } ?>   
@@ -103,7 +103,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h3><?php the_sub_field('main_title'); ?></h3>
                             <?php the_sub_field('content_block'); ?>
                                 <?php if (get_sub_field('button_type') == 'Link to page') { ?>
-                                    <a href="<?php the_sub_field('link_to_page'); ?>"><span><i class="fas fa-phone-alt"></i> <?php the_sub_field('button_label'); ?></span></a>
+                                    <a href="<?php the_sub_field('link_to_page'); ?>"><span><i class="far fa-long-arrow-right"></i> <?php the_sub_field('button_label'); ?></span></a>
                                 <?php } elseif (get_sub_field('button_type') == 'Phone') { ?>
                                     <a href="tel:<?php the_sub_field('phone_number'); ?>"><span><i class="fas fa-phone-alt"></i> <?php the_sub_field('button_label'); ?></span></a>
                                 <?php } ?>   

@@ -77,3 +77,162 @@
         }
     }
 }
+
+.page-template-discount-template #benefits .benefit-box h4 i  {
+    display: block;
+    margin:0px auto;
+    position: relative;
+    left:auto;
+    top:auto;
+    margin-bottom: 15px;
+    font-size: 48px;
+}
+
+.page-template-discount-template #benefits .benefit-box {
+    text-align: center;
+}
+
+.page-template-discount-template #benefits .benefit-box h4 {
+    font-size: 1.2em;
+}
+
+.page-template-discount-template #industries-intro {
+    margin-top: 80px!important;
+}
+
+.about-welcome  {
+    margin-bottom: 70px!important;
+    .about-block--text {
+        order:2;
+        margin-left: auto;
+    }
+    .about-block--image {
+        order:1;
+        margin-left: 0px!important;
+    }
+}
+
+.page-template-discount-template #industries-intro {
+    table {
+        width: 100%;
+        tr {
+            th {
+                background:#228800;
+                color:$white;
+                font-size: 21px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+        tr {
+            background-color: #E7EAEC;
+            td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                vertical-align: middle;
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;                
+            }
+            &:nth-child(odd) {
+                background-color: #F5F8FA;
+            }
+        }
+    }
+    blockquote {
+        padding:30px;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+        border:5px solid #228800;
+    }
+}
+
+.page-template-discount-template #benefits .benefit-box h4 {
+    padding-left: 0px!important;
+    @include media-breakpoint-down(sm) {
+        padding-left: 0px!important;
+    }
+}
+
+.page-template-discount-template {
+    #industries-content .content-block {
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px!important;
+        }
+    }
+    .discount-page .text-content {
+        @include media-breakpoint-down(sm) {
+            padding-top: 0px!important;
+        }
+    }    
+    #top-area.sticky {
+        background:#228800;
+    }
+    #benefits header .title {
+        color:#228800;
+    }
+    #testimonials header .title {
+        color:#228800;
+    }
+    #booking-div-wrap #booking-div h3 {
+        color:#000;
+    }
+    #benefits .benefit-box h4 {
+        padding-left: 0px!important;
+        @include media-breakpoint-down(sm) {
+            padding-left: 0px!important;
+        }
+    }
+    #benefits .benefit-box h4 i {
+        color:#228800!important;
+    }    
+    #testimonials #testimonial-slider .testimonial-box blockquote {
+        background:#5a5a5a;
+    }
+    #booking-block-wrap {
+        background:#44bb44;
+    }
+    #booking-div-wrap2 #booking-div h3 {
+        color:#000;
+    }
+    #booking-div-wrap #booking-div .gform_page_footer input[type=button], #booking-div-wrap #booking-div .gform_page_footer input[type=submit] {
+        background-color:#44bb44;
+    }
+    #booking-div-wrap2 #booking-div .gform_page_footer input[type=button], #booking-div-wrap2 #booking-div .gform_page_footer input[type=submit] {
+        background-color:#226600;
+    }
+    #testimonials #testimonial-slider .testimonial-box .testimonial-icon i {
+        color:#88dd88;
+    }
+    #benefits .benefit-box:hover h4 {
+        color:#228800;
+    }
+}
+
+
+.header-image--new {
+    width: 700px;
+}
+
+.discount-page {
+     .content-image img {
+        height: 390px;
+        object-fit: cover;
+    }
+    .text-content {
+        padding-top: 30px;
+    }
+}
+
+.discount-intro {
+    margin-bottom: 0px!important;
+    header {
+        margin-bottom: 0px!important;
+    }
+}
+
+.page-template-discount-template  #top-area .navbar .navbar-collapse .navbar-nav li a {
+    color:#fff;
+    &:after {
+        background: $white;
+    }
+}

@@ -62,6 +62,34 @@
         <!-- /.row -->
     </div>
     <!-- /.container -->
+
+
+    <div class="about-content-wrap">
+        <section class="about-block--content about-welcome">
+            <div class="container">
+                <img src="https://merchantchimp.com/wp-content/uploads/2020/03/shape2.png" alt="" class="about-rshape">
+                <div class="about-block--text">
+                    <span class="title"><?php the_field('small_title_who_home_disc'); ?></span>
+                    <h3><?php the_field('main_title_who_home_disc'); ?></h3>
+                    <?php the_field('content_block_who_home_disc'); ?>
+                    <a href="<?php the_field('button_link_who_home_disc'); ?>" class="book show-lg"><span><i class="far fa-long-arrow-right"></i> <?php the_field('button_label_who_home_disc'); ?></span></a>
+                </div>
+                <!-- /.about-block--text -->
+                
+                <div class="about-block--image">
+                    <img src="https://merchantchimp.com/wp-content/uploads/2020/03/shape2.png" alt="" class="mobile-shape">
+                    <img src="<?php the_field('featured_image_who_home_disc'); ?>" alt="">
+                </div>
+                <!-- /.about-block--image -->
+
+                <div class="about-book-mobile">
+                <a href="<?php the_field('button_link_who_home_disc'); ?>" class="book show-sm"><span><i class="far fa-long-arrow-right"></i> <?php the_field('button_label_who_home_disc'); ?></span></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
     <div class="about-content-wrap">
         <section class="about-block--content">
             <div class="container">
@@ -428,12 +456,12 @@
             <div class="row">
                 <?php if( have_rows('list_of_serviecs_home') ): ?>
                    <?php while( have_rows('list_of_serviecs_home') ): the_row(); ?>
-                    <div class="col-md-4">
+                    <div class="col-lg-3 col-md-6">
                         <div class="services-box">
                         <?php the_sub_field('icon_code'); ?>
                         <h4><?php the_sub_field('title'); ?></h4>
                         <p><?php the_sub_field('text'); ?></p>
-                        <a href="<?php the_sub_field('Link to service'); ?>"></a>
+                        <a href="<?php the_sub_field('link_to_service'); ?>"></a>
                         </div>
                         <!-- /.services-box -->
                     </div>
