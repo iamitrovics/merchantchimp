@@ -183,6 +183,21 @@
     <!-- /.container -->
     </section>
     <!-- /#benefits -->
+
+    <div id="cafe-cta">
+        <div class="container">
+            <div class="cafe-wrapper">
+                <a href="https://www.digitaljournal.com/pr/us-cafes-and-coffee-shops-vote-merchant-chimp-the-best-merchant-service-provider" target="_blank">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/ico/award.png" alt="">
+                    <h4>Merchant Chimp Voted The Best Merchant Service Provider by US Cafes and Coffee Shops </h4>
+
+                    <span><i class="far fa-long-arrow-right"></i>Learn More</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- // cafe cta  -->
+
     <section id="testimonials">
     <div class="container">
         <div class="row">

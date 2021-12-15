@@ -13,19 +13,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<header id="masheader">
 	<img alt="" src="<?php bloginfo('template_directory'); ?>/img/bg/shape1.png" class="l-headerbg"> 
-	<img alt="" src="<?php bloginfo('template_directory'); ?>/img/bg/clover.png" class="r-headerbg">                
+	<img alt="" src="<?php bloginfo('template_directory'); ?>/img/bg/clover.png" class="r-headerbg disc-headerbg">                
 	<div class="caption">
 		<div class="container">
 			<div class="image-artwork-mob">
 				<img src="<?php bloginfo('template_directory'); ?>/img/misc/clover.png" alt="">
 			</div>
-			<h1><?php the_field('hero_title_discount'); ?></h1>
-			<strong><?php the_field('intro_content_discount'); ?></strong>
+
+            <div class="disc-caption">
+
+                <h3 class="header-01 d-flex align-items-end">
+                    <span class="header-item-01 text-color-02">0%</span>
+                    <span class="h1">Credit Card <br>Processing</span>
+                  </h3>            
+
+                <h2><?php the_field('hero_title_discount'); ?></h2>
+                <strong><?php the_field('intro_content_discount'); ?></strong>
+            </div>
+            <!-- // caption  -->
+
 		</div>
 	</div>
 	<div class="image-artwork">
 		<div class="container container-new">
-			<img src="<?php the_field('featured_image_disc'); ?>" alt="" class="header-image--new">
+			<img src="<?php the_field('featured_image_disc'); ?>" alt="" class="header-image--new disc-image--new">
 		</div>
 	</div>
 	<div id="booking-div-wrap">
@@ -218,7 +229,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <?php if (get_sub_field('layout_type') == 'Image Left') { ?>
 
                                     <section class="services-list-box">
-                                        <img src="<?php bloginfo('template_directory'); ?>/img/bg/green-shape.png" alt="" class="about-lshape">
+                                        <img src="<?php bloginfo('template_directory'); ?>/img/bg/about-lshape.png" alt="" class="about-lshape">
                                         <div class="container">
                                                 <div class="about-block--text">
                                                 <h3><?php the_sub_field('main_title'); ?></h3>

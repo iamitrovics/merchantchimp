@@ -89,6 +89,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                     <a href="tel:<?php the_field('email_address_profile'); ?>" class="book show-lg"><span><i class="fas fa-envelope-open-text"></i> <?php the_field('email_label_profile'); ?></span></a>
 
+                    <?php if( get_field('linkedin_url_profile') ): ?>
+                    <a target="_blank" href="<?php the_field('linkedin_url_profile'); ?>" class="book show-lg"><span><i class="fab fa-linkedin-in"></i> <?php the_field('linkedin_label_profile'); ?></span></a>
+                    <?php endif; ?>
+
+                    
+
                 </div>
                 <!-- /.about-block--text -->
                 <div class="about-block--image">

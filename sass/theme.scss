@@ -98,6 +98,14 @@
 
 .page-template-discount-template #industries-intro {
     margin-top: 80px!important;
+    @include media-breakpoint-down(sm) {
+        margin-top: 0px!important;
+    }
+    #benefits {
+        @include media-breakpoint-down(sm) {
+            margin-top: 40px;
+        }
+    }
 }
 
 .about-welcome  {
@@ -117,11 +125,14 @@
         width: 100%;
         tr {
             th {
-                background:#228800;
+                background:$orange;
                 color:$white;
                 font-size: 21px;
                 padding-top: 15px;
                 padding-bottom: 15px;
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                }
             }
         }
         tr {
@@ -142,7 +153,7 @@
         padding:30px;
         padding-bottom: 0px;
         margin-bottom: 20px;
-        border:5px solid #228800;
+        border:5px solid $blue;
     }
 }
 
@@ -153,60 +164,60 @@
     }
 }
 
-.page-template-discount-template {
-    #industries-content .content-block {
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 20px!important;
-        }
-    }
-    .discount-page .text-content {
-        @include media-breakpoint-down(sm) {
-            padding-top: 0px!important;
-        }
-    }    
-    #top-area.sticky {
-        background:#228800;
-    }
-    #benefits header .title {
-        color:#228800;
-    }
-    #testimonials header .title {
-        color:#228800;
-    }
-    #booking-div-wrap #booking-div h3 {
-        color:#000;
-    }
-    #benefits .benefit-box h4 {
-        padding-left: 0px!important;
-        @include media-breakpoint-down(sm) {
-            padding-left: 0px!important;
-        }
-    }
-    #benefits .benefit-box h4 i {
-        color:#228800!important;
-    }    
-    #testimonials #testimonial-slider .testimonial-box blockquote {
-        background:#5a5a5a;
-    }
-    #booking-block-wrap {
-        background:#44bb44;
-    }
-    #booking-div-wrap2 #booking-div h3 {
-        color:#000;
-    }
-    #booking-div-wrap #booking-div .gform_page_footer input[type=button], #booking-div-wrap #booking-div .gform_page_footer input[type=submit] {
-        background-color:#44bb44;
-    }
-    #booking-div-wrap2 #booking-div .gform_page_footer input[type=button], #booking-div-wrap2 #booking-div .gform_page_footer input[type=submit] {
-        background-color:#226600;
-    }
-    #testimonials #testimonial-slider .testimonial-box .testimonial-icon i {
-        color:#88dd88;
-    }
-    #benefits .benefit-box:hover h4 {
-        color:#228800;
-    }
-}
+// .page-template-discount-template {
+//     #industries-content .content-block {
+//         @include media-breakpoint-down(sm) {
+//             margin-bottom: 20px!important;
+//         }
+//     }
+//     .discount-page .text-content {
+//         @include media-breakpoint-down(sm) {
+//             padding-top: 0px!important;
+//         }
+//     }    
+//     #top-area.sticky {
+//         background:#228800;
+//     }
+//     #benefits header .title {
+//         color:#228800;
+//     }
+//     #testimonials header .title {
+//         color:#228800;
+//     }
+//     #booking-div-wrap #booking-div h3 {
+//         color:#000;
+//     }
+//     #benefits .benefit-box h4 {
+//         padding-left: 0px!important;
+//         @include media-breakpoint-down(sm) {
+//             padding-left: 0px!important;
+//         }
+//     }
+//     #benefits .benefit-box h4 i {
+//         color:#228800!important;
+//     }    
+//     #testimonials #testimonial-slider .testimonial-box blockquote {
+//         background:#5a5a5a;
+//     }
+//     #booking-block-wrap {
+//         background:#44bb44;
+//     }
+//     #booking-div-wrap2 #booking-div h3 {
+//         color:#000;
+//     }
+//     #booking-div-wrap #booking-div .gform_page_footer input[type=button], #booking-div-wrap #booking-div .gform_page_footer input[type=submit] {
+//         background-color:#44bb44;
+//     }
+//     #booking-div-wrap2 #booking-div .gform_page_footer input[type=button], #booking-div-wrap2 #booking-div .gform_page_footer input[type=submit] {
+//         background-color:#226600;
+//     }
+//     #testimonials #testimonial-slider .testimonial-box .testimonial-icon i {
+//         color:#88dd88;
+//     }
+//     #benefits .benefit-box:hover h4 {
+//         color:#228800;
+//     }
+// }
 
 
 .header-image--new {
@@ -235,4 +246,149 @@
     &:after {
         background: $white;
     }
+}
+
+#cafe-cta {
+    margin-top: 50px;
+    .cafe-wrapper {
+        display: inline-block;
+        text-align: center;
+        background: #FFAF32;
+        box-shadow: 0px 0px 40px #00000033;
+        border-radius: 20px;
+        border: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-family: "poppinsbold";
+        font-size: 1.438em;
+        text-align: center;
+        color: #fff;
+        width: 100%;       
+        a {
+            display: block;
+            padding-top: 45px;
+            padding-bottom: 60px; 
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        img {
+            display: block;
+            margin:0px auto;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+            width: 90px;
+        }
+        h4 {
+            line-height: 1.4;
+            margin-bottom: 0px;
+            max-width: 70%;
+            margin:0px auto;
+            color:$white;
+            margin-bottom: 40px;
+            @include media-breakpoint-down(md) {
+                max-width: 100%;
+            }
+        }
+        span {
+            display: inline-block;
+            position: relative;
+            padding-left: 90px;
+            margin-left: auto;
+            margin-right: auto;
+            color:$white;
+            @include media-breakpoint-down(md) {
+                padding-left: 70px;
+            }
+            i {
+                @include centre(y);
+                left: 0;
+            }
+        }
+        &:hover {
+            span {
+                i {
+                    padding-right: 100%;
+                    padding-left: 30px;
+                    border-radius:38px;
+                    font-size: 32px;
+                }
+            }
+        }
+         i {
+            display: inline-block;
+            font-size: 26px;
+            line-height: 70px;
+            color: $white;
+            width: 76px;
+            height: 77px;
+            border: 4px solid $white; 
+            border-radius: 50%;
+            margin-right: 20px;
+            @include animate-fade;
+            @include media-breakpoint-down(md) {
+                font-size: 1.125em;
+                line-height: 50px;
+                width: 55px;
+                height: 55px;
+            }
+        }        
+    }
+}
+
+
+.disc-caption {
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+    h2 {
+        margin-bottom: 25px;
+        font-size: 32px;
+        line-height: 1.3;
+        @include media-breakpoint-down(sm) {
+            font-size: 28px;
+        }
+    }
+    h3 {
+        display: flex;
+        align-items: flex-end!important;
+        @include media-breakpoint-down(sm) {
+            display: block!important
+        }
+        .header-item-01 {
+            font-size: 160px;
+            line-height: .9;
+            color:$orange;
+            @include media-breakpoint-down(sm) {
+                font-size: 100px;
+            }
+        }
+        .header-item-02 {
+            font-size: 180px;
+            padding-right: 15px;
+            color:$orange;
+        }
+        .h1 {
+            font-size: 62px;
+            line-height: 1;
+            color:$blue;
+            position: relative;
+            top:-9px;
+            left:15px;
+            @include media-breakpoint-down(sm) {
+                font-size: 52px;
+                top:auto;
+                left:0px;
+                display: block;
+            }
+        }
+    }
+}
+
+.disc-headerbg {
+    width: 50vw!important;
+}
+
+.disc-image--new {
+    margin-right: -100px;
 }
