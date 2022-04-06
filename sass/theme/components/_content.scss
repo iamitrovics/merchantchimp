@@ -222,7 +222,7 @@ body {
 		  }
 		  h3 {
 			color: #2A2627;
-			font-size: 22px;
+			font-size: 20px;
 			line-height: 1.4;
 			font-family: $pop-bold;
 			background:  #E5E5E5;
@@ -235,6 +235,7 @@ body {
 			margin-bottom: 0px;
 			margin-top: 7px;
 			position: relative;
+			padding-right: 40px;
 			@include media-breakpoint-down(lg) {
 				padding-left: 15px;
 				padding-top: 20px;

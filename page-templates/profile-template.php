@@ -85,12 +85,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <h3><?php the_field('block_title_profile_about'); ?></h3>
                     <?php the_field('content_block_profile_ing'); ?>
 
-                    <a href="tel:<?php the_field('phone_number_rpfo'); ?>" class="book show-lg"><span><i class="fas fa-phone-alt"></i> <?php the_field('phone_label_profile_about'); ?></span></a>
+                    <a href="tel:<?php the_field('phone_number_rpfo'); ?>" class="book "><span><i class="fas fa-phone-alt"></i> <?php the_field('phone_label_profile_about'); ?></span></a>
 
-                    <a href="tel:<?php the_field('email_address_profile'); ?>" class="book show-lg"><span><i class="fas fa-envelope-open-text"></i> <?php the_field('email_label_profile'); ?></span></a>
+                    <a href="mailto:<?php the_field('email_address_profile'); ?>" class="book "><span><i class="fas fa-envelope-open-text"></i> <?php the_field('email_label_profile'); ?></span></a>
 
                     <?php if( get_field('linkedin_url_profile') ): ?>
-                    <a target="_blank" href="<?php the_field('linkedin_url_profile'); ?>" class="book show-lg"><span><i class="fab fa-linkedin-in"></i> <?php the_field('linkedin_label_profile'); ?></span></a>
+                    <a target="_blank" href="<?php the_field('linkedin_url_profile'); ?>" class="book "><span><i class="fab fa-linkedin-in"></i> <?php the_field('linkedin_label_profile'); ?></span></a>
                     <?php endif; ?>
 
                     
@@ -114,6 +114,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     <section id="services">
         <div class="container">
+
             <div class="row row-center">
                 <?php if( have_rows('features_list_profile') ): ?>
                    <?php while( have_rows('features_list_profile') ): the_row(); ?>
@@ -199,7 +200,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col-md-12">
 				<header>
 					<!--<span class="title">Supporting Businesses </span>-->
-					<h3><?php the_field('main_title_about_industry'); ?></h3>
+					<h3>Industries We Serve</h3>
 					<!--<h6>Assisting businesses to reach their true potential by decreasing monthly operating costs and enabling true next-day funding.</h6>-->
 				</header>
 				</div>

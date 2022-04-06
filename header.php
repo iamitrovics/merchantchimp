@@ -91,26 +91,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="collapse navbar-collapse" id="navbar-classic">
 					<ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
 
-						<?php
-						$primaryMenu = array(
-							'theme_location'  => 'primary',
-							'menu'            => '',
-							'container'       => '',
-							'container_class' => false,
-							'container_id'    => '',
-							'menu_class'      => 'menu',
-							'menu_id'         => 'primary-menu',
-							'echo'            => false,
-							'fallback_cb'     => 'wp_page_menu',
-							'before'          => '',
-							'after'           => '',
-							'link_before'     => '',
-							'link_after'      => '',
-							'depth'           => 0,
-							'walker'          => ''
-						);
-						echo strip_tags( wp_nav_menu( $primaryMenu ), '<li><a>' );
-						?>
+					<?php wp_nav_menu( array(  'container_class' => false, 'container'       => '' , 'menu_class' => 'menu-links', 'theme_location' => 'primary', 'items_wrap' => '%3$s'  ) ); ?>
 					
 					</ul>
 				</div>

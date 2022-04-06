@@ -471,7 +471,7 @@
             <div class="row">
                 <?php if( have_rows('list_of_serviecs_home') ): ?>
                    <?php while( have_rows('list_of_serviecs_home') ): the_row(); ?>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="services-box">
                         <?php the_sub_field('icon_code'); ?>
                         <h4><?php the_sub_field('title'); ?></h4>
