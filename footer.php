@@ -146,15 +146,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<h4><?php the_field('block_title_footer_4', 'options'); ?></h4>
 
-						<?php if( have_rows('certificate_list_footer', 'options') ): ?>
+						<div class="footer-certs">
+								<?php if( have_rows('certificate_list_footer', 'options') ): ?>
 
-						   <?php while( have_rows('certificate_list_footer', 'options') ): the_row(); ?>
+								<?php while( have_rows('certificate_list_footer', 'options') ): the_row(); ?>
+									<div class="logo-holder">
 
-								<img src="<?php the_sub_field('image'); ?>" alt="">							   
+										<img src="<?php the_sub_field('image'); ?>" alt="">							   
+										</div>
+									<!-- // logo holder  -->
+								<?php endwhile; ?>
 
-						   <?php endwhile; ?>
+								<?php endif; ?>
 
-						<?php endif; ?>
+						</div>
 
 						<!-- Custom tag - Start -->
 						<ins class='dcmads' style='display:inline-block;width:90px;height:90px'
@@ -190,11 +195,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col-md-12">
 
 					<div class="copy-bar">
-
 						<small><?php the_field('trademark_notice', 'options'); ?> </small>
-
 						<small>©<?php echo date("Y"); ?>  <?php the_field('copyright_notice', 'options'); ?></small>
-
 					</div>
 
 					<!-- /.copy-bar -->
