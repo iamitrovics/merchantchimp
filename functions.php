@@ -247,17 +247,21 @@ add_filter( 'gform_confirmation_anchor_2', '__return_false' );
 add_filter( 'gform_confirmation_anchor_4', '__return_false' );
 
 
-function fb_filter_query( $query, $error = true ) {
+if ( ! is_admin() ) {
 
-    if ( is_search() ) {
-        $query->is_search = false;
-        $query->query_vars['s'] = false;
-        $query->query['s'] = false;
+	function fb_filter_query( $query, $error = true ) {
 
-        if ( $error == true )
-            $query->is_404 = true;
-    }
+		if ( is_search() ) {
+			$query->is_search = false;
+			$query->query_vars['s'] = false;
+			$query->query['s'] = false;
+
+			if ( $error == true )
+				$query->is_404 = true;
+		}
+	}
+
+	add_action( 'parse_query', 'fb_filter_query' );
+	add_filter( 'get_search_form', function() { return null;} );
+
 }
-
-add_action( 'parse_query', 'fb_filter_query' );
-add_filter( 'get_search_form', function() { return null;} );

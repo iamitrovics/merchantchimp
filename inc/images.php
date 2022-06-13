@@ -30,3 +30,5 @@ add_image_size('ind-image', 368, 246, TRUE);
 add_image_size('marketing-image', 570, 447, TRUE);
 add_image_size('video-image', 670, 378, TRUE);
 add_image_size('test-image', 470, 470, TRUE);
+
+add_image_size('side-image', 700, 9999, FALSE);

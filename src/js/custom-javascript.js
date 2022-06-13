@@ -137,7 +137,7 @@
 		  speed: 300,
 		  slidesToShow: 2,
 		  slidesToScroll: 1,
-		  dots: false,
+		  dots: true,
 		  arrows: false,
 		  autoplay: true,
 		  autoplaySpeed: 8000,

@@ -364,8 +364,26 @@
                         <!-- /.feature-column -->
                     </div>
                     <!-- /.col -->
-                    <div class="col">
-                        <div id="info-table-slider">
+                    <div class="col no-pad-right">   
+                        <div class="mc-fixed">
+
+                        
+                            <div>
+                            <span><img src="https://merchantchimp.com/wp-content/uploads/2020/03/compar4.png" alt=""></span>
+                            <span><i class="fas fa-check-circle"></i></span>
+                            <span><i class="fas fa-check-circle"></i></span>
+                            <span><i class="fas fa-check-circle"></i></span>
+                            <span><i class="fas fa-check-circle"></i></span>
+                            <span><i class="fas fa-check-circle"></i></span>
+                            <span><i class="fas fa-check-circle"></i></span>
+                            <span><i class="fas fa-check-circle"></i></span>
+                            <span><i class="fas fa-check-circle"></i></span>                         
+                            </div>    
+                        </div>                    
+                    </div>
+                    <div class="col no-pad-left">
+                        <div id="info-table-sliderx">
+
                             <div>
                             <span><i class="fab fa-stripe"></i></span>
                             <span><i class="fas fa-times-circle"></i></span>
@@ -378,6 +396,7 @@
                             <span><i class="fas fa-check-circle"></i></span>
                             <span><i class="fas fa-times-circle"></i></span>                            
                             </div>
+
                             <div>
                             <span><img src="https://merchantchimp.com/wp-content/uploads/2020/03/compar2.png" alt=""></span>
                             <span><i class="fas fa-times-circle"></i></span>
@@ -389,6 +408,7 @@
                             <span><i class="fas fa-times-circle"></i></span>
                             <span><i class="fas fa-check-circle"></i></span>                         
                             </div>
+                            
                             <div>
                             <span><i class="fab fa-paypal"></i></span>
                             <span> <i class="fas fa-times-circle"></i></span>
@@ -399,17 +419,6 @@
                             <span> <i class="fas fa-times-circle"></i></span>
                             <span><i class="fas fa-times-circle"></i></span>  
                             <span><i class="fas fa-times-circle"></i></span>                            
-                            </div>
-                            <div>
-                            <span><img src="https://merchantchimp.com/wp-content/uploads/2020/03/compar4.png" alt=""></span>
-                            <span><i class="fas fa-check-circle"></i></span>
-                            <span><i class="fas fa-check-circle"></i></span>
-                            <span><i class="fas fa-check-circle"></i></span>
-                            <span><i class="fas fa-check-circle"></i></span>
-                            <span><i class="fas fa-check-circle"></i></span>
-                            <span><i class="fas fa-check-circle"></i></span>
-                            <span><i class="fas fa-check-circle"></i></span>
-                            <span><i class="fas fa-check-circle"></i></span>                         
                             </div>
                         </div>
                         <!-- /#info-table-slider -->
@@ -693,3 +702,16 @@
     <?php include(TEMPLATEPATH . '/inc/quote-inc.php'); ?>
     
 <?php get_footer(''); ?>
+
+<script>
+jQuery('#info-table-sliderx').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 8000,
+		});
+</script>
