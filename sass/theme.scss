@@ -2277,3 +2277,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abf8', end
         content: '\f105';
     }
 }
+
+.blogs-detailed {
+    table  {
+        margin-bottom: 80px;
+    }
+}
+
+.similar-posts .blog-box footer {
+    @include media-breakpoint-down(lg) {
+        position: relative!important;
+        right:auto!important;
+        left:auto!important;
+        padding-bottom: 15px!important;
+    }
+}
