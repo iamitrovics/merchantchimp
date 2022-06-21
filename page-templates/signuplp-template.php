@@ -36,7 +36,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="header-form">
 				<div class="inner-form">
 					<h3><?php the_field('form_title_lp_sign'); ?></h3>
-					<?php the_field('form_code_lp_sign'); ?>
+					<!-- <?php the_field('form_code_lp_sign'); ?> -->
+
+					<!-- <?php echo do_shortcode('[contact-form-7 id="2751" title="Contact form 1"]'); ?> -->
+
+					<form action="https://merchantchimp.iriscrm.com/postleads/t/e00296c95b1d85a04a46bb3c7c0ea419" method="POST" enctype="multipart/form-data" id="signForm">
+
+					<!-- (required) Add this field to save visitor history -->
+					<input type="hidden" name="visitor_tracking" value="" />
+
+					<!-- (optional) Overwrite default Campaign -->
+					<input type="hidden" name="campaign" value="Signup" />
+
+					<!-- (optional) Overwrite default Lead Source -->
+					<input type="hidden" name="source" value="Signup Page" />
+
+					<!-- (optional) Example how to pass data to record sets -->
+					<input type="text" name="full_name" value="" placeholder="Full Name *" required />
+					<input type="text" name="dba_name" value="" placeholder="Company Name *" required />
+
+					<input type="tel" name="phone_tel" value="" placeholder="Phone Number *" required />
+					<input type="email" name="email_field" value="" placeholder="Email Address *" required />
+
+					<input type="submit" value="Get Started">
+
+					</form>
+
 				</div>
 				<!-- // inner  -->
 				<div class="cert-lp">
@@ -258,6 +283,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</script>
 <?php get_footer('lp'); ?>
 
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+<script>
+$("#signForm").validate();
+</script>
+
 <script>
 	// Sticky header
 	jQuery(window).scroll(function() {
@@ -272,3 +303,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 </script>
+

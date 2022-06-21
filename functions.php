@@ -265,3 +265,12 @@ if ( ! is_admin() ) {
 	add_filter( 'get_search_form', function() { return null;} );
 
 }
+
+
+
+// Place this in your functions.php file in order to change action url
+add_filter('wpcf7_form_action_url', 'wpcf7_custom_form_action_url');
+function wpcf7_custom_form_action_url(){
+return 'https://merchantchimp.iriscrm.com/postleads/t/e00296c95b1d85a04a46bb3c7c0ea419'  ;// replace this with the new action url (excluding the ‘http://&#8217;)
+}
+

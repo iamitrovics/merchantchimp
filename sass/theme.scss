@@ -802,6 +802,7 @@
                     position: relative;
                     z-index: 9;       
                     background-color: #fafafa;  
+                    margin-top: 20px;
                     &:focus {
                         outline: 0;
                         background-color: $white;
@@ -819,6 +820,7 @@
                     font-family: $pop-bold;
                     font-size: 20px;
                     @include animate-fade;
+                    margin-top: 20px;
                     &:hover {
                         background-color: $blue;
                     }
@@ -2291,4 +2293,130 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abf8', end
         left:auto!important;
         padding-bottom: 15px!important;
     }
+}
+
+label.error {
+    color:red;
+    font-size: 14px;
+}
+
+input.error {
+    border-color:red!important;
+}
+
+
+#blogs .blogs-detailed  .blog-content {
+    div.ui-accordion-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-top: 40px;
+        background: #f5f5f5;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        @include media-breakpoint-down(sm) {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            padding-top: 20px;
+        }		
+        p {
+            font-size: 15px;
+            line-height: 23px;
+            color: #808080;
+            margin-bottom: 20px;
+        }	
+        ul {
+            margin-left: 40px;
+            margin-bottom: 20px;
+            @include media-breakpoint-down(lg) {
+                margin-left: 20px;
+            }
+            li {
+                font-size: 15px;
+                line-height: 23px;
+                color: #808080;
+                display: block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                position: relative;
+                &:before {
+                    width: 6px;
+                    height: 6px;
+                    background-color: $blue;
+                    border-radius: 100%;
+                    position: absolute;
+                    left:-20px;
+                    top:17px;
+                    content:'';
+                    display: block;
+                }
+                a {
+                    color:$blue;
+                    &:hover {
+                        color:$orange;
+                    }
+                }					
+            }
+        }
+      }    
+	h4 {
+		color: #2A2627;
+		font-size: 20px;
+		line-height: 1.4;
+		font-family: $pop-bold;
+		background:  #E5E5E5;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		padding-left: 30px;
+		padding-top: 40px;
+		padding-bottom: 36px;
+		@include animate-fade;
+		margin-bottom: 0px;
+		margin-top: 7px;
+		position: relative;
+		padding-right: 40px;
+		@include media-breakpoint-down(lg) {
+			padding-left: 15px;
+			padding-top: 20px;
+			padding-bottom: 18px;
+			font-size: 16px;
+			padding-right: 130px;
+		}
+		&:after {
+			@include centre(y);
+			right:-160px;
+			content:'ANSWER';
+			width: 170px;
+			border-radius: 15px;
+			text-align: center;
+			background: #00ABF8;
+			text-transform: uppercase;
+			color:$white;
+			font-size: 18px;
+			font-family: $pop-bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			@include media-breakpoint-down(lg) {
+				width: 100px;
+				right:0px;
+				font-size: 15px;
+			}
+		}
+		&:focus {
+			outline: 0;
+		}
+		&:hover {
+			color:$orange;
+			cursor:pointer;
+		}
+		&.ui-accordion-header-active {
+			&:after {
+				background: #FFAF32;
+				content:'CLOSE';
+			}
+		}
+	  }
 }
